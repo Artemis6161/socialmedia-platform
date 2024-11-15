@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Socket.io Test</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  </head>
+  <body>
+    <h1>Socket.io Test</h1>
+    <p id="status">Connecting...</p>
+    <script>
+      const socket = io("http://localhost:5000");
+
+      socket.on("connect", () => {
+        document.getElementById("status").textContent = "Connected!";
+        console.log(`Connected with ID: ${socket.id}`);
+      });
+
+      socket.on("receiveNotification", (data) => {
+        console.log("Notification received:", data);
+        alert(`Notification: ${data.notification}`);
+      });
+
+      socket.on("disconnect", () => {
+        document.getElementById("status").textContent = "Disconnected";
+        console.log("Disconnected from server");
+      });
+    </script>
+  </body>
+</html> -->
